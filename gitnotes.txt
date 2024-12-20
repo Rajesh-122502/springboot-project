@@ -1,1 +1,9 @@
 create local repository: git init
+
+    -Initialized empty repository.
+    -bydefault it will create master branch. to get a branch named main we need to run "git init -b main"
+.git folder is the local repository or called as staging area.
+
+add file to staging area: git add <file_name>
+
+save in staging area/commit a file: git commit -m "commit_message"
