@@ -7,3 +7,7 @@ create local repository: git init
 add file to staging area: git add <file_name>
 
 save in staging area/commit a file: git commit -m "commit_message"
+
+commit without stage: git commit -a -m "..."
+
+see the difference between commited file and working directory file: git diff/ git diff --staged
