@@ -39,4 +39,19 @@ push new branch to remote repository: git push origin <branch_name>
 merge two branches: git merge main feature1
 cancel merge: git merge --quit
 --------------------------------
-commited first on main branch
+STASH
+=====
+
+to stash: git stash- it will ave the changes for future Reference
+to see the stash list- git stash list
+apply the stash again- git stash apply
+
+FORK AND PULL REQUEST
+======================
+suppose rajesh is the main user for repository and aksh is the second user and wants to make changes in the same repository. Then akash need to go to rajesh's github profile and navigate to the particular project repository, then fork it. Fork will place the repositoryin akash's github account.
+
+Then akash will clone the project to his local machine, make the changes commit and push the changes to github. Now the changes are there is akash's github repository. Then he will go to pull request tab and raise a pull request.
+
+Then rajesh will got to his pull request tab and review the code changes and then merge the pull request.
+
+In this way both can contribute to the same project.
