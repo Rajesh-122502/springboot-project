@@ -1,0 +1,33 @@
+LOGIN DETAILS FROM DATABASE:-
+=============================
+
+As we change are authentication provider that will connect to the database/DAO layer, so we need to implement authentication provider(in config package).
+
+In that authentication provider implementation, we need UserDetailsService. It handles the connection to the database and retrieving the user details.
+
+UserDetailsService is an interface, so we need to implement this interface(MyUserDetailsService).
+
+This UserDetailsService has a method called loadUserByUsername which returns the object of UserDetails. So we need to create one model class which will implement UserDetails so that we can return the object of that class.In spring security, the current user which we are authentication is called as principal. SO we can name the class as UserPrincipal.
+
+In UserPrincipal we can do additional things like set expiry, set locked etc. If the MyUserDetailsService returns a valid object, then well and good the user is logged in.
+
+
+
+JWT: JSON Web Token:-
+=====================
+
+Everytime we login to the application, the login API will create a jwt token for successful login, then for every other API we will not need to enter the login credentials only we will send the token.
+
+for basic login, we have to send the credentials to authenticate and if the credentials are correct then return a token and if the credentials are wrong then return failed. We can authenticate by using AuthenticationManager object which we can hold using @Bean.
+
+note- for only login from database we provide credentials in basic auth, but for generation token we have to send in body in @Requestbody.
+
+For creating and encrypting jwt token, first we need to add 3 dependencies to the pom.xml file. they are jjwt-api, jjwt-impl, jjwt-jackson.
+
+we need to do two things for jwt, one is to generate a token and the 2nd one is to verify the token.
+
+generate token:- generateToken(), getKey(), generateSecretKey() methods included in jwtService class.
+
+validate token:- to validate the generated token we have to add a filter which will do the validation before the UsernamePasswordAuthentication filter. we can add that in our own filterchain in config file.
+
+After introducing JwtFilter, it will extend to OncePerRequestFilter in order to apply for every API and then implement it's method doFilterInternal.
