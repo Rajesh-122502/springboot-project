@@ -38,3 +38,4 @@ delete a branch: git branch -d <branch_name>
 push new branch to remote repository: git push origin <branch_name>
 merge two branches: git merge main feature1
 cancel merge: git merge --quit
+--------------------------------
