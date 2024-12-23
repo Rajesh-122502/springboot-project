@@ -36,5 +36,8 @@ switch branch : git checkout <branch_name> / git switch <branch_name>
 show all the branches available: git branch
 delete a branch: git branch -d <branch_name>
 push new branch to remote repository: git push origin <branch_name>
+<<<<<<< HEAD
 merge two branches: git merge main feature1
 >>>>>>> feature1
+=======
+merge two branches: git merge main feature1
