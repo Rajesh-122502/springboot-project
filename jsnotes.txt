@@ -1,0 +1,83 @@
+1) console API:
+
+console.log("demo");
+console.warn("demo");
+console.error("demo");
+
+2) VARIABLES:
+
+var-- declare globally
+let-- declare within scope
+
+3) DATATYPES:
+
+numbers, string, boolean
+objects(key value pairs)-
+var marks= {
+    abcd: 20,
+    efgh: 30
+}
+
+Primitive datatype: undefined, null, number, string, boolean, symbol
+Referenced datatype: objects, array
+
+4) FUNCTION:
+
+function avg(a, b){
+    return (a+b)/2;
+}
+
+5) ARRAY METHODS:
+
+arr.length - length of the array
+arr.pop() - removes the last value
+arr.push() - inserts to the last
+arr.shift() - removes the first
+arr.unshift() - inserts at first
+arr.sort() - sorts the array
+
+6) STRING METHODS:
+
+str.length
+str.indexOf()
+str.slice(0,3)
+str.replace("to be replaced", "replaced by") - replaces only the first occurance
+
+7) DOM MANIPULATION:
+
+document.getElementById("eg");
+document.getElementsByClassName("eg");
+document.getElementByTagName("eg");
+
+8) EVENT LISTENER
+
+id_name.addEventListener('event_name', function(){functionality goes here});    
+
+9) ARROW FUNCTION
+
+normal function-
+function sum(a,b){
+    return a+b;
+}
+
+Arrow function-
+sum= (a,b)=>{
+    return a+b;
+}
+
+10) SET TIMEOUT & SET INTERVAL
+
+clr= setTimeout(doLog, 3000);
+to stop this, clearTimeout(clr);
+
+clr= setInterval(doLog, 3000);
+to stop this, clearInterval(clr);
+
+11) JSON
+
+JSON to String conversion-
+str= JSON.stringify(obj);
+obj= JSON.parse(string version of json object)
+
+temporarily stopped
+2nd change

@@ -17,5 +17,24 @@ remove a file from git: git rm --cached <file_name>
 
 to create a main branch : git branch -M main
 
+CONNECT TO THE REMOTE REPOSITORY:
+=================================
+git remote add origin https://github.com/Rajesh-122502/springboot-project.git
+
+we are setting "origin" as the name for the remote repository i.e. the URL mentioned.
+
+push to remote repository:
+git push -u origin main
+
+-u sets up the upstream means for the subsequent push or pull we need to enter only the command "git push", "git pull".
+this coomand means we are pushing local commits from the branch named "main" to the remote repository named "origin".
+
 BRANCH:
-========
+=======
+create a new branch: git checkout -b <branch_name> / git checkout --branch <branch_name>
+switch branch : git checkout <branch_name> / git switch <branch_name>
+show all the branches available: git branch
+delete a branch: git branch -d <branch_name>
+push new branch to remote repository: git push origin <branch_name>
+merge two branches: git merge main feature1
+>>>>>>> feature1
