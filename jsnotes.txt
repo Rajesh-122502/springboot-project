@@ -78,3 +78,5 @@ to stop this, clearInterval(clr);
 JSON to String conversion-
 str= JSON.stringify(obj);
 obj= JSON.parse(string version of json object)
+
+temporarily stopped
