@@ -9,3 +9,4 @@ const options={weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
 // date= a.toLocaleDateString(undefined, options);
 // document.getElementById('time').innerHTML= time+ " on "+ date;
 // },1000);
+// changes from akash
